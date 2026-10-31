@@ -6,7 +6,7 @@
 /*   By: lcamp <lcamp@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/31 04:20:17 by lcamp             #+#    #+#             */
-/*   Updated: 2026/10/31 05:08:41 by lcamp            ###   ########.fr       */
+/*   Updated: 2026/10/31 06:36:23 by lcamp            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,4 +33,15 @@ int	parse_flag(char *arg, t_config *config)
 	else
 		return (0);
 	return (1);
+}
+
+//le skip te donne direct la position de ton premier chiffre, il skip le nom du fichier et tous les flags
+int	skip_flags(int argc, char **argv, t_config *config)
+{
+	int	i;
+
+	i = 1;
+	while (i < argc && parse_flag(argv[i], config))
+		i++;
+	return (i);
 }
