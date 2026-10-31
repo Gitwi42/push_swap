@@ -6,7 +6,7 @@
 /*   By: lcamp <lcamp@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/31 04:20:17 by lcamp             #+#    #+#             */
-/*   Updated: 2026/10/31 06:36:23 by lcamp            ###   ########.fr       */
+/*   Updated: 2026/10/31 14:03:54 by lcamp            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,3 +45,4 @@ int	skip_flags(int argc, char **argv, t_config *config)
 		i++;
 	return (i);
 }
+

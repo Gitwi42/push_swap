@@ -6,14 +6,14 @@
 /*   By: lcamp <lcamp@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 03:04:45 by mhinojos          #+#    #+#             */
-/*   Updated: 2026/10/31 06:36:28 by lcamp            ###   ########.fr       */
+/*   Updated: 2026/10/31 14:02:08 by lcamp            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 
-#include "libft/libft.h"
+//#include "libft/libft.h"
 
 typedef enum e_algo
 {
@@ -44,6 +44,7 @@ typedef struct s_push_swap
 void	init_config(t_config *config);
 int	parse_flag(char *arg, t_config *config);
 int	skip_flags(int argc, char **argv, t_config *config);
+double	compute_disorder(t_stack *a);
 void	ps_sa(t_push_swap *stack);
 void	ps_sb(t_push_swap *stack);
 void	ps_ss(t_push_swap *stack);
