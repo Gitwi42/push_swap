@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mhinojos <mhinojos@student.42lausanne.c    +#+  +:+       +#+        */
+/*   By: lcamp <lcamp@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 03:01:04 by mhinojos          #+#    #+#             */
-/*   Updated: 2026/10/30 10:34:16 by mhinojos         ###   ########.fr       */
+/*   Updated: 2026/10/31 04:32:31 by lcamp            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,9 +80,11 @@ int static	satoi(char *str, int *result)
 int	main(int argc, char **argv)
 {
 	t_push_swap	stack;
+	t_config	config;
 
 	if (argc < 2)
 		return (0);
+	init_config(&config);
 	stack.a.data = malloc (sizeof (int) * (argc - 1));
 	if (!stack.a.data)
 		return (0);
