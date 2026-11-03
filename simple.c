@@ -54,3 +54,16 @@ void	rotate_to_top(t_push_swap *stack, int p)
 		}
 	}
 }
+
+void	simple_sort(t_push_swap *stack)
+{
+	int p;
+	while (stack->a.size > 0)
+	{
+		p = find_min_index(&stack->a);
+		rotate_to_top(stack, p);
+		ps_pb(stack);
+	}
+	while (stack->b.size > 0)
+		ps_pa(stack);
+}
