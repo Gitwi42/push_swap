@@ -6,7 +6,7 @@
 /*   By: lcamp <lcamp@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 03:04:45 by mhinojos          #+#    #+#             */
-/*   Updated: 2026/11/03 00:56:39 by lcamp            ###   ########.fr       */
+/*   Updated: 2026/11/03 12:06:41 by lcamp            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,7 @@ int	parse_flag(char *arg, t_config *config);
 int	skip_flags(int argc, char **argv, t_config *config);
 t_algo	dispatch_algo(double disorder, t_algo algo);
 double	compute_disorder(t_stack *a);
+int	find_min_index(t_stack *a);
 void	ps_sa(t_push_swap *stack);
 void	ps_sb(t_push_swap *stack);
 void	ps_ss(t_push_swap *stack);
