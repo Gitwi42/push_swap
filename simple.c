@@ -6,7 +6,7 @@
 /*   By: lcamp <lcamp@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/31 14:05:54 by lcamp             #+#    #+#             */
-/*   Updated: 2026/11/03 12:10:08 by lcamp            ###   ########.fr       */
+/*   Updated: 2026/11/03 12:26:32 by lcamp            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,4 +29,28 @@ int	find_min_index(t_stack *a)
 		i++;
 	}
 	return (min);
+}
+
+void	rotate_to_top(t_push_swap *stack, int p)
+{
+	int	count;
+
+	if (p <= (stack->a.size - p))
+	{
+		count = p;
+		while (count)
+		{
+			ps_ra(stack);
+			count--;
+		}
+	}
+	else
+	{
+		count = stack->a.size - p;
+		while (count)
+		{
+			ps_rra(stack);
+			count--;
+		}
+	}
 }
