@@ -6,7 +6,7 @@
 /*   By: lcamp <lcamp@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/31 14:04:02 by lcamp             #+#    #+#             */
-/*   Updated: 2026/10/31 14:04:15 by lcamp            ###   ########.fr       */
+/*   Updated: 2026/11/03 00:53:29 by lcamp            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,3 +38,4 @@ double	compute_disorder(t_stack *a)
 		return (0);
 	return ((double)mistakes / total_pairs);
 }
+
