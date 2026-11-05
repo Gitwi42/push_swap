@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcamp <lcamp@student.42lausanne.ch>        +#+  +:+       +#+        */
+/*   By: mhinojos <mhinojos@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 03:01:04 by mhinojos          #+#    #+#             */
 /*   Updated: 2026/10/31 06:36:29 by lcamp            ###   ########.fr       */
@@ -14,7 +14,7 @@
 #include <limits.h>
 #include <unistd.h>
 
-int static	checkoverflow(long nb, int next, int isnegative)
+static int	checkoverflow(long nb, int next, int isnegative)
 {
 	long	limit;
 
@@ -26,7 +26,7 @@ int static	checkoverflow(long nb, int next, int isnegative)
 	return (1);
 }
 
-int static	fillstack(int *data, int size, char **argv)
+static int	fillstack(int *data, int size, char **argv)
 {
 	int	i;
 	int	j;
@@ -49,7 +49,7 @@ int static	fillstack(int *data, int size, char **argv)
 	return (1);
 }
 
-int static	satoi(char *str, int *result)
+static int	satoi(char *str, int *result)
 {
 	int		i;
 	int		isnegative;

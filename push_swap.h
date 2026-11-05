@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcamp <lcamp@student.42lausanne.ch>        +#+  +:+       +#+        */
+/*   By: mhinojos <mhinojos@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 03:04:45 by mhinojos          #+#    #+#             */
 /*   Updated: 2026/11/03 12:22:39 by lcamp            ###   ########.fr       */
