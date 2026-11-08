@@ -6,7 +6,7 @@
 /*   By: lcamp <lcamp@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/31 14:05:38 by lcamp             #+#    #+#             */
-/*   Updated: 2026/11/04 19:37:32 by lcamp            ###   ########.fr       */
+/*   Updated: 2026/11/08 17:11:07 by lcamp            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,4 +50,14 @@ int	compute_ranks(t_stack *a)
 	}
 	free(ranks);
 	return (1);
+}
+
+int	int_sqrt(int n)
+{
+	int j;
+
+	j = 0;
+	while(((j+1) * (k+1)) <= n)
+		j++;
+	return (j);
 }

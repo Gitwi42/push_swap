@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mhinojos <mhinojos@student.42lausanne.c    +#+  +:+       +#+        */
+/*   By: lcamp <lcamp@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 03:04:45 by mhinojos          #+#    #+#             */
-/*   Updated: 2026/11/04 16:03:31 by lcamp            ###   ########.fr       */
+/*   Updated: 2026/11/08 17:13:03 by lcamp            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,4 +63,5 @@ void	rotate_to_top(t_push_swap *stack, int p);
 void	simple_sort(t_push_swap *stack);
 int	get_rank(t_stack *a, int i);
 int	compute_ranks(t_stack *a);
+int	int_sqrt(int n);
 #endif
