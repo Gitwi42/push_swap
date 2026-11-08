@@ -6,7 +6,7 @@
 /*   By: mhinojos <mhinojos@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 03:04:45 by mhinojos          #+#    #+#             */
-/*   Updated: 2026/11/03 12:22:39 by lcamp            ###   ########.fr       */
+/*   Updated: 2026/11/04 16:03:31 by lcamp            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define PUSH_SWAP_H
 
 //#include "libft/libft.h"
+#include <stdlib.h>
 
 typedef enum e_algo
 {
@@ -41,13 +42,6 @@ typedef struct s_push_swap
 	t_stack	b;
 }	t_push_swap;
 
-void	init_config(t_config *config);
-int	parse_flag(char *arg, t_config *config);
-int	skip_flags(int argc, char **argv, t_config *config);
-t_algo	dispatch_algo(double disorder, t_algo algo);
-double	compute_disorder(t_stack *a);
-int	find_min_index(t_stack *a);
-void	rotate_to_top(t_push_swap *stack, int p);
 void	ps_sa(t_push_swap *stack);
 void	ps_sb(t_push_swap *stack);
 void	ps_ss(t_push_swap *stack);
@@ -59,5 +53,14 @@ void	ps_rr(t_push_swap *stack);
 void	ps_rra(t_push_swap *stack);
 void	ps_rrb(t_push_swap *stack);
 void	ps_rrr(t_push_swap *stack);
-
+void	init_config(t_config *config);
+int	parse_flag(char *arg, t_config *config);
+int	skip_flags(int argc, char **argv, t_config *config);
+t_algo	dispatch_algo(double disorder, t_algo algo);
+double	compute_disorder(t_stack *a);
+int	find_min_index(t_stack *a);
+void	rotate_to_top(t_push_swap *stack, int p);
+void	simple_sort(t_push_swap *stack);
+int	get_rank(t_stack *a, int i);
+int	compute_ranks(t_stack *a);
 #endif

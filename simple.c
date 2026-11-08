@@ -6,7 +6,7 @@
 /*   By: lcamp <lcamp@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/31 14:05:54 by lcamp             #+#    #+#             */
-/*   Updated: 2026/11/03 12:26:32 by lcamp            ###   ########.fr       */
+/*   Updated: 2026/11/04 14:59:01 by lcamp            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,8 @@ void	rotate_to_top(t_push_swap *stack, int p)
 
 void	simple_sort(t_push_swap *stack)
 {
-	int p;
+	int	p;
+	
 	while (stack->a.size > 0)
 	{
 		p = find_min_index(&stack->a);
