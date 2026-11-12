@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: lcamp <lcamp@student.42lausanne.ch>        +#+  +:+       +#+         #
+#    By: mhinojos <mhinojos@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/30 10:53:41 by mhinojos          #+#    #+#              #
-#    Updated: 2026/11/08 00:00:00 by Codex            ###   ########.fr        #
+#    Updated: 2026/11/12 01:39:32 by mhinojos         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 

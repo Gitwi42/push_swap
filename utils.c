@@ -3,13 +3,11 @@
 /*                                                        :::      ::::::::   */
 /*   utils.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcamp <lcamp@student.42lausanne.ch>        +#+  +:+       +#+        */
+/*   By: mhinojos <mhinojos@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 00:59:17 by lcamp             #+#    #+#             */
-/*   Updated: 2026/11/03 01:06:17 by lcamp            ###   ########.fr       */
+/*   Updated: 2026/11/12 01:42:31 by mhinojos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
-

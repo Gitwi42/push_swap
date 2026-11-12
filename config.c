@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   config.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcamp <lcamp@student.42lausanne.ch>        +#+  +:+       +#+        */
+/*   By: mhinojos <mhinojos@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/31 04:20:17 by lcamp             #+#    #+#             */
-/*   Updated: 2026/10/31 14:03:54 by lcamp            ###   ########.fr       */
+/*   Updated: 2026/11/12 01:40:47 by mhinojos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,8 @@ int	parse_flag(char *arg, t_config *config)
 	return (1);
 }
 
-//le skip te donne direct la position de ton premier chiffre, il skip le nom du fichier et tous les flags
+//le skip te donne direct la position de ton premier chiffre,
+// il skip le nom du fichier et tous les flags
 int	skip_flags(int argc, char **argv, t_config *config)
 {
 	int	i;
@@ -45,4 +46,3 @@ int	skip_flags(int argc, char **argv, t_config *config)
 		i++;
 	return (i);
 }
-

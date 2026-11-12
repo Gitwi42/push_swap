@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   simple.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcamp <lcamp@student.42lausanne.ch>        +#+  +:+       +#+        */
+/*   By: mhinojos <mhinojos@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/31 14:05:54 by lcamp             #+#    #+#             */
-/*   Updated: 2026/11/04 14:59:01 by lcamp            ###   ########.fr       */
+/*   Updated: 2026/11/12 01:43:28 by mhinojos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ int	find_min_index(t_stack *a)
 
 	i = 1;
 	min = 0;
-
 	if (a->size <= 0)
 		return (0);
 	while (i < a->size)
