@@ -6,15 +6,16 @@
 /*   By: mhinojos <mhinojos@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 03:04:45 by mhinojos          #+#    #+#             */
-/*   Updated: 2026/11/12 01:43:13 by mhinojos         ###   ########.fr       */
+/*   Updated: 2026/11/12 01:58:11 by mhinojos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 
-//#include "libft/libft.h"
+# include "libft/libft.h"
 # include <stdlib.h>
+# include <unistd.h>
 
 typedef enum e_algo
 {
