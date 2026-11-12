@@ -6,7 +6,7 @@
 /*   By: mhinojos <mhinojos@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 03:01:04 by mhinojos          #+#    #+#             */
-/*   Updated: 2026/10/31 06:36:29 by lcamp            ###   ########.fr       */
+/*   Updated: 2026/11/12 01:48:46 by mhinojos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,29 +23,6 @@ static int	checkoverflow(long nb, int next, int isnegative)
 		limit = limit + 1;
 	if ((limit - next) / 10 < nb)
 		return (0);
-	return (1);
-}
-
-static int	fillstack(int *data, int size, char **argv)
-{
-	int	i;
-	int	j;
-	int	value;
-
-	i = 0;
-	while (i < size)
-	{
-		if (!satoi(argv[i + 1], &value))
-			return (0);
-		j = 0;
-		while (j < i)
-		{
-			if (data[j] == value)
-				return (0);
-			j++;
-		}
-		data[i++] = value;
-	}
 	return (1);
 }
 
@@ -74,6 +51,29 @@ static int	satoi(char *str, int *result)
 	if (str[i] && (str[i] < '0' || str[i] > '9'))
 		return (0);
 	(*result) = (int)(longresult * isnegative);
+	return (1);
+}
+
+static int	fillstack(int *data, int size, char **argv)
+{
+	int	i;
+	int	j;
+	int	value;
+
+	i = 0;
+	while (i < size)
+	{
+		if (!satoi(argv[i + 1], &value))
+			return (0);
+		j = 0;
+		while (j < i)
+		{
+			if (data[j] == value)
+				return (0);
+			j++;
+		}
+		data[i++] = value;
+	}
 	return (1);
 }
 
