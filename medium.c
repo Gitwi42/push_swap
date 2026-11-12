@@ -6,7 +6,7 @@
 /*   By: mhinojos <mhinojos@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/31 14:05:38 by lcamp             #+#    #+#             */
-/*   Updated: 2026/11/12 01:45:04 by mhinojos         ###   ########.fr       */
+/*   Updated: 2026/11/12 01:51:08 by mhinojos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ int	int_sqrt(int n)
 	int	j;
 
 	j = 0;
-	while (((j + 1) * (k + 1)) <= n)
+	while (((j + 1) * (j + 1)) <= n)
 		j++;
 	return (j);
 }
